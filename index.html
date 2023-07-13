@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Quiz App</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='Scripts/bootstrap.css'>
+</head>
+<body>
+    
+<div class="container mt-5 pb-2 w-25 text-light bg-dark rounded">
+    <form>
+        <!-- #region -->
+        <!-- Name -->
+        <p id="Total-score" class="Total score : "></p>
+        <label for="Name" class="form-label pt-2">Name:</label>
+        <input class="form-control rounded-pill" id="Name" placeholder="Enter Name">
+        <!-- ID -->
+        <label for="ID" class="form-label pt-2">ID :</label>
+        <input class="form-control rounded-pill" id="ID" placeholder="Enter ID" >
+        <!-- #endregion -->
+
+        <!-- multiple-choice -->
+        <label for="multiple-choice-1" class="form-label pt-2">Question 1 :</label>
+        <select class="form-select rounded-pill" id="multiple-choice-1" >
+            <option value="0">Select</option>
+            <option value="1" onclick="getVal()">1</option>
+            <option value="2" onclick="getVal()">2</option>
+            <option value="3" onclick="getVal()">3</option>
+        </select>
+        <p id="score-1" class="score"></p>
+
+        <label for="multiple-choice-2" class="form-label pt-2">Question 2 :</label>
+        <select class="form-select rounded-pill" id="multiple-choice-2">
+            <option value="0">Select</option>
+            <option value="1" onclick="getVal()">1</option>
+            <option value="2" onclick="getVal()">2</option>
+            <option value="3" onclick="getVal()">3</option>
+        </select>
+        <p id="score-2" class="score"></p>
+
+        <!-- check-label -->
+        <label class="form-check-label pt-2">Question 3 :</label>
+        <div class="form-check">
+            <input type="radio" class="form-check-input" id="radio-question-1" value="1" onclick="getVal()">
+            <label class="form-check-label">1</label>
+        </div>
+        <div class="form-check">
+            <input type="radio" class="form-check-input" id="radio-question-2" value="2" onclick="getVal()">
+            <label class="form-check-label">2</label>
+        </div>
+        <p id="score-3" class="score"></p>
+
+        <!-- Radio buttons -->
+        <label class="form-check-label pt-2">Question 4 :</label>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="checkbox-question-1" value="1" onclick="getVal()">
+            <label class="form-check-label">Option 1</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="checkbox-question-2" value="2" onclick="getVal()">
+            <label class="form-check-label">Option 2</label>
+        </div>
+        <p id="score-4" class="score"></p>
+    </form>
+          
+    <button type="submit" class="btn btn-primary mt-2" onclick="getVal()">Submit</button>
+</div>
+
+
+<script src='main.js'></script>
+<script src='Scripts/jquery-3.6.0.js'></script>
+<script src='Scripts/bootstrap.js'></script>
+</body>
+</html>
