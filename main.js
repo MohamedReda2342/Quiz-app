@@ -7,7 +7,7 @@ function getVal() {
     
   // Question 2
   var question2 = document.getElementById("multiple-choice-2");
-  if(parseInt(question2.value)==1)
+   if(parseInt(question2.value)==1)
   score2=1;
 
     // Question 3
