@@ -10,7 +10,7 @@
 </head>
 <body>
     
-<div class="container mt-5 pb-2 w-25 text-light bg-dark rounded">
+<div class="container mt-5 pb-2 w-25 bg-light.bg-gradient rounded">
     <form>
         <!-- #region -->
         <!-- Name -->
@@ -24,11 +24,11 @@
 
         <!-- multiple-choice -->
         <label for="multiple-choice-1" class="form-label pt-2">Question 1 :</label>
-        <select class="form-select rounded-pill" id="multiple-choice-1" >
+        <select class="form-select rounded-pill " onclick="getVal()" id="multiple-choice-1" >
             <option value="0">Select</option>
-            <option value="1" onclick="getVal()">1</option>
-            <option value="2" onclick="getVal()">2</option>
-            <option value="3" onclick="getVal()">3</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
         </select>
         <p id="score-1" class="score"></p>
 
