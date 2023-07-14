@@ -41,19 +41,20 @@
         </select>
         <p id="score-2" class="score"></p>
 
-        <!-- check-label -->
+        <!-- Radio buttons -->
+
         <label class="form-check-label pt-2">Question 3 :</label>
         <div class="form-check">
-            <input type="radio" class="form-check-input" id="radio-question-1" value="1" onclick="getVal()">
+            <input type="radio" class="form-check-input" name="radAnswer" id="radio-question-1" value="1" onclick="getVal()">
             <label class="form-check-label">1</label>
         </div>
         <div class="form-check">
-            <input type="radio" class="form-check-input" id="radio-question-2" value="2" onclick="getVal()">
+            <input type="radio" class="form-check-input" name="radAnswer" id="radio-question-2" value="2" onclick="getVal()">
             <label class="form-check-label">2</label>
         </div>
         <p id="score-3" class="score"></p>
 
-        <!-- Radio buttons -->
+        <!-- check-label -->
         <label class="form-check-label pt-2">Question 4 :</label>
         <div class="form-check">
             <input class="form-check-input" type="checkbox" id="checkbox-question-1" value="1" onclick="getVal()">
@@ -69,7 +70,7 @@
     <button type="submit" class="btn btn-primary mt-2" onclick="getVal()">Submit</button>
 </div>
 
-
+    
 <script src='main.js'></script>
 <script src='Scripts/jquery-3.6.0.js'></script>
 <script src='Scripts/bootstrap.js'></script>
